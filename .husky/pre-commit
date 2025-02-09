@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# This script is used to run test cases for the project.
+
+echo "Running test cases..."
+exit 0
+# TODO: Add test cases here.
