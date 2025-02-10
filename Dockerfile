@@ -4,12 +4,9 @@ WORKDIR /app
 
 COPY package.json .
 
-ADD . .
+COPY . .
 
-RUN npm install
-
-RUN npm run build
-
+RUN npm install && npm run build
 
 FROM node:20-bullseye-slim as production
 
