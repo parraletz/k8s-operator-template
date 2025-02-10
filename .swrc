@@ -12,6 +12,9 @@
       "@/src/*": [
         "src/*"
       ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
       "@/tests/*": [
         "tests/*"
       ]

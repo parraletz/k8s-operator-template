@@ -1,7 +1,7 @@
 {
   "name": "k8s-operator-template",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/app.js",
   "scripts": {
     "prepublishOnly": "npm i && npm run build",
     "build": "npm run validate-typescript && npm run build:clean && npm run generate-dist",
@@ -11,7 +11,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
     "validate-typescript": "tsc -p tsconfig.json --noEmit",
-    "generate-dist": "ncc build src/index.ts",
+    "generate-dist": "ncc build src/app.ts",
     "build:clean": "rimraf dist; exit 0",
     "prepare": "node .husky/install.mjs",
     "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh",
@@ -70,5 +70,6 @@
     "vite": "^6.1.0",
     "vitest": "^3.0.5",
     "vitest-mock-extended": "^2.0.2"
-  }
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }

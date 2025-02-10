@@ -8,7 +8,7 @@ ADD . .
 
 RUN npm install
 
-RUN npm run build:docker
+RUN npm run build
 
 
 FROM node:20-bullseye-slim as production
