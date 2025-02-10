@@ -1,6 +1,6 @@
+import { k8sCustomObjects } from '@/src/client'
+import { watchExampleCRD } from '@controllers/example.controller'
 import { describe, expect, it, vi } from 'vitest'
-import { k8sCustomObjects } from '../../src/client'
-import { watchExampleCRD } from '../../src/controllers/example.controller'
 
 vi.mock('../../src/client/k8s', () => ({
   k8sCustomObjects: {

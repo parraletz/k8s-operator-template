@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-operator
+  namespace: k8s-operator
+  labels:
+    app: k8s-operator
+spec:
+  selector:
+    matchLabels:
+      app: k8s-operator
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: k8s-operator
+    spec:
+      serviceAccountName: k8s-operator
+      containers:
+      - name: k8s-operator
+        image: ghcr.io/parraletz/k8s-operator-template:latest
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi" 
+            cpu: "500m"
+

@@ -1,0 +1,7 @@
+apiVersion: cloudscouts.xyz/v1
+kind: Example
+metadata:
+  name: example-crd
+  namespace: default
+spec:
+  message: "Hola Kubernetes"
