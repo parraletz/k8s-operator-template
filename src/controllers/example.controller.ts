@@ -12,7 +12,7 @@ export async function watchExampleCRD() {
       plural: PLURAL,
       namespace: 'default'
     })
-    const resources = res.body as any
+    const resources = res.body
     for (const resource of resources.items) {
       console.log(resource)
       console.log(`Message: ${resource.spec.message}`)

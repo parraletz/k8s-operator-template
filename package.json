@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "type": "module",
   "dependencies": {
     "@kubernetes/client-node": "^1.0.0",
     "dotenv": "^16.4.7",
@@ -49,6 +50,7 @@
     "@typescript-eslint/eslint-plugin": "^8.23.0",
     "@typescript-eslint/parser": "^8.23.0",
     "@vercel/ncc": "^0.38.3",
+    "@vitest/coverage-istanbul": "3.0.5",
     "eslint": "^9.20.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-node": "^11.1.0",
@@ -68,6 +70,7 @@
     "tsconfig-paths": "^4.2.0",
     "unplugin-swc": "^1.5.1",
     "vite": "^6.1.0",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.5",
     "vitest-mock-extended": "^2.0.2"
   },
