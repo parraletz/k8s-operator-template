@@ -66,7 +66,7 @@
     "replace-json-property": "^1.9.0",
     "rimraf": "^6.0.1",
     "semantic-release": "^24.2.2",
-    "ts-jest": "^29.2.5",
+    "ts-jest": "^29.3.0",
     "tsconfig-paths": "^4.2.0",
     "unplugin-swc": "^1.5.1",
     "vite": "^6.1.0",
